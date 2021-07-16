@@ -6,6 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/androidparty"
+        android:importantForAccessibility="no"
+        />
+
     <TextView
         android:id="@+id/happyBirthdayMessage"
         android:layout_width="wrap_content"
@@ -13,7 +26,7 @@
         android:layout_marginStart="@dimen/margin_16"
         android:layout_marginTop="@dimen/margin_16"
         android:fontFamily="sans-serif-light"
-        android:text="@string/happy_birthday"
+        android:text="@string/happy_birthday_text"
         android:textColor="@android:color/white"
         android:textSize="@dimen/text_size"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,9 +39,10 @@
         android:layout_marginEnd="@dimen/margin_16"
         android:layout_marginBottom="@dimen/margin_16"
         android:fontFamily="sans-serif-light"
-        android:text="@string/from_deea"
+        android:text="@string/from_text"
         android:textColor="@android:color/white"
         android:textSize="@dimen/text_size"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
